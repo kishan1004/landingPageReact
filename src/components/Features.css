@@ -1,0 +1,33 @@
+
+.FooterPortion1 {
+    position: relative;
+    background-image: url('../images/loaction.jpeg');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height:auto;
+}
+
+.FooterPortion1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    
+    background-size: inherit;
+  
+    background-position: inherit;
+    filter: brightness(50%);
+    
+    z-index: 0;
+   
+}
+
+.FooterPortion1 * {
+    position: relative;
+    z-index: 1;
+   
+}
