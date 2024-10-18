@@ -477,7 +477,7 @@ const Footer = () => {
           <ul className="leading-loose text-base font-thin">
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Hoodies
@@ -485,7 +485,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Sweatshirts
@@ -493,7 +493,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Shirts
@@ -501,7 +501,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 T-shirts
@@ -509,7 +509,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Jackets
@@ -523,7 +523,7 @@ const Footer = () => {
           <ul className="leading-loose text-base font-thin">
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 About
@@ -531,7 +531,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Blog
@@ -539,7 +539,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Contact
@@ -547,7 +547,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Guarantee
@@ -555,7 +555,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Shipping
@@ -569,7 +569,7 @@ const Footer = () => {
           <ul className="leading-loose text-base font-thin">
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Style Guide
@@ -577,7 +577,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Licensing
@@ -585,7 +585,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Change Log
@@ -593,7 +593,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 Instructions
@@ -606,7 +606,7 @@ const Footer = () => {
           <ul>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 <svg
@@ -647,7 +647,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 <svg
@@ -688,7 +688,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 <svg
@@ -729,7 +729,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://github.com/kishan1004/landingPageReact"
+                href="https://www.google.co.in/"
                 className="hover:brightness-50"
               >
                 <svg

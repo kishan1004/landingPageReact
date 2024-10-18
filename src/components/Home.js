@@ -118,7 +118,7 @@ const Home = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-[#FFFFFF] text-center md:text-start">
             INTO THE <br /> RIGHT GEAR
           </h1>
-          <a href="https://github.com/kishan1004/landingPageReact">
+          <a href="https://www.google.co.in/">
             <div className="flex justify-center just mt-5 md:mt-10 xl:mt-20 pb-5 md:pl-0 ">
               <div>
                 <p>VIEW SUMMER COLLECTION</p>
