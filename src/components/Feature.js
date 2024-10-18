@@ -35,7 +35,7 @@ const Feature = () => {
             </p>
           </div> */}
 
-          <img src={Features1} className="w-1/2 hidden md:flex" />
+          <img src={Features1} alt="clothes" className="w-1/2 hidden md:flex" />
         </div>
       </div>
     </section>

@@ -118,7 +118,7 @@ const Home = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-[#FFFFFF] text-center md:text-start">
             INTO THE <br /> RIGHT GEAR
           </h1>
-          <a href="#">
+          <a href="https://github.com/kishan1004/landingPageReact">
             <div className="flex justify-center just mt-5 md:mt-10 xl:mt-20 pb-5 md:pl-0 ">
               <div>
                 <p>VIEW SUMMER COLLECTION</p>
@@ -156,6 +156,7 @@ const Home = () => {
 
         <div>
           <img
+            alt="clothes"
             src={HomeImg}
             className="2xl:h-[700px] xl:h-[600px] md:h-[350px] lg:h-[450px]"
           />

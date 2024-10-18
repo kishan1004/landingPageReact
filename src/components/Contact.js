@@ -1,10 +1,10 @@
 import React from "react";
-import Contact1 from "../images/contact1.jpeg";
-import Contact2 from "../images/contact2.jpeg";
-import Contact3 from "../images/contact3.jpeg";
-import Contact4 from "../images/contact4.jpeg";
-import Contact5 from "../images/contact5.jpeg";
-import Contact6 from "../images/contact6.jpeg";
+// import Contact1 from "../images/contact1.jpeg";
+// import Contact2 from "../images/contact2.jpeg";
+// import Contact3 from "../images/contact3.jpeg";
+// import Contact4 from "../images/contact4.jpeg";
+// import Contact5 from "../images/contact5.jpeg";
+// import Contact6 from "../images/contact6.jpeg";
 
 const Contact = () => {
   return (

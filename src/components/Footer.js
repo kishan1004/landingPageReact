@@ -476,27 +476,42 @@ const Footer = () => {
           <h1 className="md:pb-[41px] font-medium text-sm">CATOGORIES</h1>
           <ul className="leading-loose text-base font-thin">
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Hoodies
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Sweatshirts
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Shirts
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 T-shirts
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Jackets
               </a>
             </li>
@@ -507,27 +522,42 @@ const Footer = () => {
           <h1 className="md:pb-[41px] font-medium text-sm">COMPANY</h1>
           <ul className="leading-loose text-base font-thin">
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Blog
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Contact
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Guarantee
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Shipping
               </a>
             </li>
@@ -538,22 +568,34 @@ const Footer = () => {
           <h1 className="md:pb-[41px] font-medium text-sm">SUPPORT</h1>
           <ul className="leading-loose text-base font-thin">
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Style Guide
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Licensing
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Change Log
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 Instructions
               </a>
             </li>
@@ -563,7 +605,10 @@ const Footer = () => {
         <div className="col-span-1 py-10 md:pt-0 px-10">
           <ul>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 <svg
                   width="25"
                   height="25"
@@ -601,7 +646,10 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 <svg
                   width="25"
                   height="25"
@@ -639,7 +687,10 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 <svg
                   width="25"
                   height="25"
@@ -677,7 +728,10 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:brightness-50">
+              <a
+                href="https://github.com/kishan1004/landingPageReact"
+                className="hover:brightness-50"
+              >
                 <svg
                   width="25"
                   height="25"

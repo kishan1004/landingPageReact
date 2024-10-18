@@ -12,7 +12,7 @@ const Slide = () => {
         <div class="relative cursor-pointer">
           <img
             src={Slide1}
-            alt="image"
+            alt="clothes"
             className="w-[368px] 2xl:w-[450px] 2xl:h-[820px] xl:h-[600px] lg:h-[550px] md:h-[450px] rounded grayscale hover:grayscale-0 brightness-50 hover:brightness-100"
           />
           <div className="absolute bottom-40 2xl:bottom-64 2xl:right-8 right-4 transform -rotate-90 origin-bottom-right text-white text-4xl 2xl:text-6xl">
@@ -23,7 +23,7 @@ const Slide = () => {
         <div class="relative lg:pt-[40px] cursor-pointer">
           <img
             src={Slide2}
-            alt="image"
+            alt="clothes"
             className="w-[368px] 2xl:w-[450px] 2xl:h-[820px] xl:h-[600px] lg:h-[550px] md:h-[450px] rounded grayscale hover:grayscale-0 brightness-50 hover:brightness-100"
           />
           <div className="absolute md:bottom-52 bottom-56 2xl:bottom-[340px] 2xl:right-8 right-4 transform -rotate-90 origin-bottom-right text-white text-4xl 2xl:text-6xl">
@@ -34,7 +34,7 @@ const Slide = () => {
         <div class="relative cursor-pointer">
           <img
             src={Slide3}
-            alt="image"
+            alt="clothes"
             className="w-[368px] 2xl:w-[450px] 2xl:h-[820px] xl:h-[600px] lg:h-[550px] md:h-[450px] rounded grayscale hover:grayscale-0 brightness-50 hover:brightness-100"
           />
           <div className="absolute bottom-32 2xl:bottom-48 2xl:right-8 right-4 transform -rotate-90 origin-bottom-right text-white text-4xl 2xl:text-6xl">
@@ -45,7 +45,7 @@ const Slide = () => {
         <div class="relative lg:pt-[40px] cursor-pointer">
           <img
             src={Slide4}
-            alt="image"
+            alt="clothes"
             className="w-[368px] 2xl:w-[450px] 2xl:h-[820px] xl:h-[600px] lg:h-[550px] md:h-[450px] rounded grayscale hover:grayscale-0 brightness-50 hover:brightness-100"
           />
           <div className="absolute md:bottom-36 2xl:bottom-56 bottom-44 2xl:right-8 right-4 transform -rotate-90 origin-bottom-right text-white text-4xl 2xl:text-6xl">
@@ -55,7 +55,7 @@ const Slide = () => {
         <div class="relative cursor-pointer">
           <img
             src={Slide5}
-            alt="image"
+            alt="clothes"
             className="2xl:w-[450px] w-[368px] 2xl:h-[820px] xl:h-[600px] lg:h-[550px] md:h-[450px] rounded grayscale hover:grayscale-0 brightness-50 hover:brightness-100"
           />
           <div className="absolute bottom-40 2xl:bottom-64 2xl:right-8 right-4 transform -rotate-90 origin-bottom-right text-white text-4xl 2xl:text-6xl">

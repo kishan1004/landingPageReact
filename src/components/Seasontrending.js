@@ -1,9 +1,9 @@
 import React from "react";
 import Product1 from "../images/product1.jpeg";
 import Product2 from "../images/product2.jpeg";
-import Product3 from "../images/product3.jpeg";
-import Product4 from "../images/product4.jpeg";
-import Product5 from "../images/product5.jpeg";
+// import Product3 from "../images/product3.jpeg";
+// import Product4 from "../images/product4.jpeg";
+// import Product5 from "../images/product5.jpeg";
 import Product6 from "../images/product6.jpeg";
 import Product7 from "../images/product7.jpeg";
 import { useEffect } from "react";
@@ -98,6 +98,7 @@ const Seasontrending = () => {
         <div>
           <img
             src={Product1}
+            alt="clothes"
             className="h-[360px] w-[301px] 2xl:w-[400px] 2xl:h-[460px]"
           />
           <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
@@ -150,6 +151,7 @@ const Seasontrending = () => {
         <div>
           <img
             src={Product2}
+            alt="clothes"
             className="w-[301px] h-[360px] 2xl:w-[400px] 2xl:h-[460px]"
           />
           <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
@@ -202,6 +204,7 @@ const Seasontrending = () => {
         <div>
           <img
             src={Product7}
+            alt="clothes"
             className="w-[301px] h-[360px] 2xl:w-[400px] 2xl:h-[460px]"
           />
           <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
@@ -254,6 +257,7 @@ const Seasontrending = () => {
         <div>
           <img
             src={Product6}
+            alt="clothes"
             className="w-[301px] h-[360px] 2xl:w-[400px] 2xl:h-[460px]"
           />
           <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
