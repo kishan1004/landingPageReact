@@ -1,8 +1,8 @@
 import React from "react";
 import Features1 from "../images/feature.jpeg";
 
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useState } from "react";
+// import { motion, useAnimation } from "framer-motion";
+// import { useEffect, useState } from "react";
 
 // const ScrollSection = () => {
 //   const textAnimation = useAnimation();

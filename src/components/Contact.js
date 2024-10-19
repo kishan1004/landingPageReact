@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // import Contact1 from "../images/contact1.jpeg";
 // import Contact2 from "../images/contact2.jpeg";
 // import Contact3 from "../images/contact3.jpeg";
@@ -8,29 +8,30 @@ import React, { useState, useEffect } from "react";
 import ContactBg from "../images/contact-us.svg";
 
 const Contact = () => {
-  const [bgPosition, setBgPosition] = useState(60); // Start position at 60%
+  // const [bgPosition, setBgPosition] = useState(60); // Start position at 60%
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (bgPosition) {
-        console.log("");
-      }
-      const scrollTop = window.scrollY;
-      const docHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = (scrollTop / docHeight) * 100;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (bgPosition) {
+  //       console.log("");
+  //     }
+  //     const scrollTop = window.scrollY;
+  //     const docHeight =
+  //       document.documentElement.scrollHeight - window.innerHeight;
+  //     const scrollPercent = (scrollTop / docHeight) * 100;
 
-      // Only update the background position from 60% to 100%
-      const newPosition = Math.min(100, Math.max(60, scrollPercent + 60));
-      setBgPosition(newPosition);
-    };
+  //     // Only update the background position from 60% to 100%
+  //     const newPosition = Math.min(100, Math.max(60, scrollPercent + 60));
+  //     setBgPosition(newPosition);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <section
       className="bg-[#1A1A1A] bg-no-repeat w-full mt-20 relative py-96 bg-cover"

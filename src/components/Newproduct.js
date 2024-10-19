@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Card = (props) => {
-  const { pic1, pic2, productlink } = props;
+  const { pic1, pic2 } = props;
 
   const [ishovering, setIsHovering] = useState(false);
   return (
@@ -180,13 +180,13 @@ const Newproduct = () => {
       </div>
 
       <div className="max-w-[1150px] mx-auto grid lg:grid-cols-4 gap-5 gap-y-10 md:grid-cols-2 my-20 place-items-center">
-        <Card pic1={Product6} pic2={Product2} productlink="/" />
-        <Card pic1={Product2} pic2={Product1} productlink="/" />
-        <Card pic1={Product6} pic2={Product2} productlink="/" />
-        <Card pic1={Product2} pic2={Product1} productlink="/" />
-        <Card pic1={Product2} pic2={Product1} productlink="/" />
-        <Card pic1={Product2} pic2={Product1} productlink="/" />
-        <Card pic1={Product2} pic2={Product1} productlink="/" />
+        <Card pic1={Product6} pic2={Product2} />
+        <Card pic1={Product2} pic2={Product1} />
+        <Card pic1={Product6} pic2={Product2} />
+        <Card pic1={Product2} pic2={Product1} />
+        <Card pic1={Product2} pic2={Product1} />
+        <Card pic1={Product2} pic2={Product1} />
+        <Card pic1={Product2} pic2={Product1} />
       </div>
     </section>
   );
