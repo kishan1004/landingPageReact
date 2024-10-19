@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Product1 from "../images/product1.jpeg";
 import Product2 from "../images/product2.jpeg";
 import Product3 from "../images/product3.jpeg";
@@ -9,6 +9,88 @@ import Product7 from "../images/product7.jpeg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+const Card = (props) => {
+  const { pic1, pic2, productlink } = props;
+
+  const [ishovering, setIsHovering] = useState(false);
+  return (
+    <div
+      className="w-full max-w-[260px]"
+      onMouseEnter={() => {
+        console.log("MouseEnter");
+        setIsHovering(true);
+      }}
+      onMouseLeave={() => {
+        console.log("MouseDown");
+        setIsHovering(false);
+      }}
+    >
+      <div className="w-full h-[300px] overflow-hidden bg-red-600">
+        <img
+          src={pic1}
+          alt="clothes"
+          className={`${
+            ishovering ? "block" : "hidden"
+          }  object-fill  ease-in duration-500 transition-all`}
+        />
+
+        <img
+          src={pic2}
+          alt="clothes"
+          className={`${
+            !ishovering ? "block" : "hidden"
+          }  hover:opacity-0  object-fill ease-in duration-500 transition-all`}
+        />
+      </div>
+      <div className="flex justify-between p-4 bg-white  w-full ">
+        <div>
+          <p className="text-sm">Crew Neck Shirt</p>
+          <p className="text-[#888888] text-base">€29.29</p>
+        </div>
+        <p>
+          <svg
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_1002_1693)">
+              <g clip-path="url(#clip1_1002_1693)">
+                <path
+                  d="M1.85156 5.04021H4.77048L6.72615 15.3662C6.79288 15.7213 6.97565 16.0402 7.24247 16.2672C7.50929 16.4942 7.84315 16.6148 8.18561 16.6078H15.2786C15.6211 16.6148 15.9549 16.4942 16.2218 16.2672C16.4886 16.0402 16.6713 15.7213 16.7381 15.3662L17.9056 8.89607H5.50021M20.825 2.72656V7.3536M23.0139 5.04004H18.6355M8.41913 20.4637C8.41913 20.8896 8.09242 21.2349 7.6894 21.2349C7.28638 21.2349 6.95967 20.8896 6.95967 20.4637C6.95967 20.0378 7.28638 19.6925 7.6894 19.6925C8.09242 19.6925 8.41913 20.0378 8.41913 20.4637ZM16.4462 20.4637C16.4462 20.8896 16.1195 21.2349 15.7164 21.2349C15.3134 21.2349 14.9867 20.8896 14.9867 20.4637C14.9867 20.0378 15.3134 19.6925 15.7164 19.6925C16.1195 19.6925 16.4462 20.0378 16.4462 20.4637Z"
+                  stroke="#262524"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_1002_1693">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0.12207 0.226562)"
+                />
+              </clipPath>
+              <clipPath id="clip1_1002_1693">
+                <rect
+                  width="24"
+                  height="21"
+                  fill="white"
+                  transform="translate(0.12207 1.72656)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </p>
+      </div>
+    </div>
+  );
+};
 
 const Newproduct = () => {
   useEffect(() => {
@@ -36,26 +118,29 @@ const Newproduct = () => {
   }, []);
 
   return (
-    <section className="bg-[#E1DEDB] justify-center w-full">
-      <div className="xl:w-[1350px] 2xl:w-[2000px] mx-auto  lg:pt-20">
-        <h1
-          className="2xl:text-9xl xl:text-8xl text-5xl md:text-6xl font-bold text-[#1A1A1A] text-center md:text-left xl:ml-[220px] 2xl:ml-[380px] lg:ml-[250px] md:ml-[140px] pt-[49px]"
-          data-aos="fade-right"
-          data-aos-delay="50"
-          data-aos-duration="2000"
-        >
-          NEWEST
-        </h1>
-        <h1
-          className="2xl:text-9xl xl:text-8xl text-4xl md:text-6xl font-bold text-[#FFFFFF] text-center md:text-right xl:mr-[220px] 2xl:mr-[380px] lg:mr-[250px] md:mr-[140px]"
-          data-aos="fade-left"
-          data-aos-delay="50"
-          data-aos-duration="2000"
-        >
-          PRODUCTS
-        </h1>
-        <div className="lg:flex lg:justify-between lg:px-20 2xl:pl-0">
-          <p className="lg:w-[500px] xl:w-[675px] 2xl:w-[900px] pt-[16px] text-justify 2xl:px-16 xl:px-8 lg:px-0 px-5  text-lg font-normal">
+    <section className=" max-w-[1150px] mx-auto my-20 px-4">
+      <div>
+        <div className="2xl:text-9xl xl:text-8xl text-5xl md:text-6xl font-bold max-w-[80%] mx-auto">
+          <h1
+            className=" text-[#1A1A1A] text-center md:text-left"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            NEWEST
+          </h1>
+          <h1
+            className=" text-[#FFFFFF] text-center md:text-right mt-4"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            PRODUCTS
+          </h1>
+        </div>
+
+        <div className="lg:flex lg:justify-between mt-8">
+          <p className="lg:w-[500px] xl:w-[675px] 2xl:w-[900px] pt-[16px] text-justify text-lg font-normal">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique,
             animi. Cupiditate a aspernatur asperiores repellat sapiente impedit
             assumenda nisi modi sunt numquam quod ullam magnam possimus delectus
@@ -64,7 +149,7 @@ const Newproduct = () => {
             adipisci ad ex, laborum facilis?
           </p>
 
-          <div className="pt-[16px] grid grid-cols-2 place-items-center ">
+          <div className="flex  max-w-[160px] mx-auto lg:mx-0 mt-10 flex-1 w-full justify-between pr-10">
             <p>VIEW ALL</p>
             <svg
               width="13"
@@ -94,378 +179,14 @@ const Newproduct = () => {
         </div>
       </div>
 
-      <div className="xl:w-[1150px] 2xl:w-[1950px] mx-auto grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 py-20 px-6 2xl:gap-y-10 gap-5 lg:px-16 xl:px-0 place-items-center">
-        <div>
-          <img
-            src={Product1}
-            alt="clothes"
-            className="h-[360px] w-[301px] 2xl:w-[400px] 2xl:h-[460px] hover:opacity-0 transition-opacity duration-500 ease-in-out"
-          />
-
-          <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
-            <div>
-              <p className="text-sm">Crew Neck Shirt</p>
-              <p className="text-[#888888] text-base">€29.29</p>
-            </div>
-            <p>
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_1002_1693)">
-                  <g clip-path="url(#clip1_1002_1693)">
-                    <path
-                      d="M1.85156 5.04021H4.77048L6.72615 15.3662C6.79288 15.7213 6.97565 16.0402 7.24247 16.2672C7.50929 16.4942 7.84315 16.6148 8.18561 16.6078H15.2786C15.6211 16.6148 15.9549 16.4942 16.2218 16.2672C16.4886 16.0402 16.6713 15.7213 16.7381 15.3662L17.9056 8.89607H5.50021M20.825 2.72656V7.3536M23.0139 5.04004H18.6355M8.41913 20.4637C8.41913 20.8896 8.09242 21.2349 7.6894 21.2349C7.28638 21.2349 6.95967 20.8896 6.95967 20.4637C6.95967 20.0378 7.28638 19.6925 7.6894 19.6925C8.09242 19.6925 8.41913 20.0378 8.41913 20.4637ZM16.4462 20.4637C16.4462 20.8896 16.1195 21.2349 15.7164 21.2349C15.3134 21.2349 14.9867 20.8896 14.9867 20.4637C14.9867 20.0378 15.3134 19.6925 15.7164 19.6925C16.1195 19.6925 16.4462 20.0378 16.4462 20.4637Z"
-                      stroke="#262524"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_1002_1693">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(0.12207 0.226562)"
-                    />
-                  </clipPath>
-                  <clipPath id="clip1_1002_1693">
-                    <rect
-                      width="24"
-                      height="21"
-                      fill="white"
-                      transform="translate(0.12207 1.72656)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <img
-            src={Product2}
-            alt="clothes"
-            className="w-[301px] h-[360px] 2xl:w-[400px] 2xl:h-[460px]"
-          />
-          <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
-            <div>
-              <p className="text-sm">Crew Neck Shirt</p>
-              <p className="text-[#888888] text-base">€29.29</p>
-            </div>
-            <p>
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_1002_1693)">
-                  <g clip-path="url(#clip1_1002_1693)">
-                    <path
-                      d="M1.85156 5.04021H4.77048L6.72615 15.3662C6.79288 15.7213 6.97565 16.0402 7.24247 16.2672C7.50929 16.4942 7.84315 16.6148 8.18561 16.6078H15.2786C15.6211 16.6148 15.9549 16.4942 16.2218 16.2672C16.4886 16.0402 16.6713 15.7213 16.7381 15.3662L17.9056 8.89607H5.50021M20.825 2.72656V7.3536M23.0139 5.04004H18.6355M8.41913 20.4637C8.41913 20.8896 8.09242 21.2349 7.6894 21.2349C7.28638 21.2349 6.95967 20.8896 6.95967 20.4637C6.95967 20.0378 7.28638 19.6925 7.6894 19.6925C8.09242 19.6925 8.41913 20.0378 8.41913 20.4637ZM16.4462 20.4637C16.4462 20.8896 16.1195 21.2349 15.7164 21.2349C15.3134 21.2349 14.9867 20.8896 14.9867 20.4637C14.9867 20.0378 15.3134 19.6925 15.7164 19.6925C16.1195 19.6925 16.4462 20.0378 16.4462 20.4637Z"
-                      stroke="#262524"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_1002_1693">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(0.12207 0.226562)"
-                    />
-                  </clipPath>
-                  <clipPath id="clip1_1002_1693">
-                    <rect
-                      width="24"
-                      height="21"
-                      fill="white"
-                      transform="translate(0.12207 1.72656)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <img
-            src={Product3}
-            alt="clothes"
-            className="w-[301px] h-[360px] 2xl:w-[400px] 2xl:h-[460px]"
-          />
-          <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
-            <div>
-              <p className="text-sm">Crew Neck Shirt</p>
-              <p className="text-[#888888] text-base">€29.29</p>
-            </div>
-            <p>
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_1002_1693)">
-                  <g clip-path="url(#clip1_1002_1693)">
-                    <path
-                      d="M1.85156 5.04021H4.77048L6.72615 15.3662C6.79288 15.7213 6.97565 16.0402 7.24247 16.2672C7.50929 16.4942 7.84315 16.6148 8.18561 16.6078H15.2786C15.6211 16.6148 15.9549 16.4942 16.2218 16.2672C16.4886 16.0402 16.6713 15.7213 16.7381 15.3662L17.9056 8.89607H5.50021M20.825 2.72656V7.3536M23.0139 5.04004H18.6355M8.41913 20.4637C8.41913 20.8896 8.09242 21.2349 7.6894 21.2349C7.28638 21.2349 6.95967 20.8896 6.95967 20.4637C6.95967 20.0378 7.28638 19.6925 7.6894 19.6925C8.09242 19.6925 8.41913 20.0378 8.41913 20.4637ZM16.4462 20.4637C16.4462 20.8896 16.1195 21.2349 15.7164 21.2349C15.3134 21.2349 14.9867 20.8896 14.9867 20.4637C14.9867 20.0378 15.3134 19.6925 15.7164 19.6925C16.1195 19.6925 16.4462 20.0378 16.4462 20.4637Z"
-                      stroke="#262524"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_1002_1693">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(0.12207 0.226562)"
-                    />
-                  </clipPath>
-                  <clipPath id="clip1_1002_1693">
-                    <rect
-                      width="24"
-                      height="21"
-                      fill="white"
-                      transform="translate(0.12207 1.72656)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <img
-            src={Product4}
-            alt="clothes"
-            className="w-[301px] h-[360px] 2xl:w-[400px] 2xl:h-[460px]"
-          />
-          <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
-            <div>
-              <p className="text-sm">Crew Neck Shirt</p>
-              <p className="text-[#888888] text-base">€29.29</p>
-            </div>
-            <p>
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_1002_1693)">
-                  <g clip-path="url(#clip1_1002_1693)">
-                    <path
-                      d="M1.85156 5.04021H4.77048L6.72615 15.3662C6.79288 15.7213 6.97565 16.0402 7.24247 16.2672C7.50929 16.4942 7.84315 16.6148 8.18561 16.6078H15.2786C15.6211 16.6148 15.9549 16.4942 16.2218 16.2672C16.4886 16.0402 16.6713 15.7213 16.7381 15.3662L17.9056 8.89607H5.50021M20.825 2.72656V7.3536M23.0139 5.04004H18.6355M8.41913 20.4637C8.41913 20.8896 8.09242 21.2349 7.6894 21.2349C7.28638 21.2349 6.95967 20.8896 6.95967 20.4637C6.95967 20.0378 7.28638 19.6925 7.6894 19.6925C8.09242 19.6925 8.41913 20.0378 8.41913 20.4637ZM16.4462 20.4637C16.4462 20.8896 16.1195 21.2349 15.7164 21.2349C15.3134 21.2349 14.9867 20.8896 14.9867 20.4637C14.9867 20.0378 15.3134 19.6925 15.7164 19.6925C16.1195 19.6925 16.4462 20.0378 16.4462 20.4637Z"
-                      stroke="#262524"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_1002_1693">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(0.12207 0.226562)"
-                    />
-                  </clipPath>
-                  <clipPath id="clip1_1002_1693">
-                    <rect
-                      width="24"
-                      height="21"
-                      fill="white"
-                      transform="translate(0.12207 1.72656)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <img
-            src={Product5}
-            alt="clothes"
-            className="w-[301px] h-[360px] 2xl:w-[400px] 2xl:h-[460px]"
-          />
-          <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
-            <div>
-              <p className="text-sm">Crew Neck Shirt</p>
-              <p className="text-[#888888] text-base">€29.29</p>
-            </div>
-            <p>
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_1002_1693)">
-                  <g clip-path="url(#clip1_1002_1693)">
-                    <path
-                      d="M1.85156 5.04021H4.77048L6.72615 15.3662C6.79288 15.7213 6.97565 16.0402 7.24247 16.2672C7.50929 16.4942 7.84315 16.6148 8.18561 16.6078H15.2786C15.6211 16.6148 15.9549 16.4942 16.2218 16.2672C16.4886 16.0402 16.6713 15.7213 16.7381 15.3662L17.9056 8.89607H5.50021M20.825 2.72656V7.3536M23.0139 5.04004H18.6355M8.41913 20.4637C8.41913 20.8896 8.09242 21.2349 7.6894 21.2349C7.28638 21.2349 6.95967 20.8896 6.95967 20.4637C6.95967 20.0378 7.28638 19.6925 7.6894 19.6925C8.09242 19.6925 8.41913 20.0378 8.41913 20.4637ZM16.4462 20.4637C16.4462 20.8896 16.1195 21.2349 15.7164 21.2349C15.3134 21.2349 14.9867 20.8896 14.9867 20.4637C14.9867 20.0378 15.3134 19.6925 15.7164 19.6925C16.1195 19.6925 16.4462 20.0378 16.4462 20.4637Z"
-                      stroke="#262524"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_1002_1693">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(0.12207 0.226562)"
-                    />
-                  </clipPath>
-                  <clipPath id="clip1_1002_1693">
-                    <rect
-                      width="24"
-                      height="21"
-                      fill="white"
-                      transform="translate(0.12207 1.72656)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <img
-            src={Product6}
-            alt="clothes"
-            className="w-[301px] h-[360px] 2xl:w-[400px] 2xl:h-[460px]"
-          />
-          <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
-            <div>
-              <p className="text-sm">Crew Neck Shirt</p>
-              <p className="text-[#888888] text-base">€29.29</p>
-            </div>
-            <p>
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_1002_1693)">
-                  <g clip-path="url(#clip1_1002_1693)">
-                    <path
-                      d="M1.85156 5.04021H4.77048L6.72615 15.3662C6.79288 15.7213 6.97565 16.0402 7.24247 16.2672C7.50929 16.4942 7.84315 16.6148 8.18561 16.6078H15.2786C15.6211 16.6148 15.9549 16.4942 16.2218 16.2672C16.4886 16.0402 16.6713 15.7213 16.7381 15.3662L17.9056 8.89607H5.50021M20.825 2.72656V7.3536M23.0139 5.04004H18.6355M8.41913 20.4637C8.41913 20.8896 8.09242 21.2349 7.6894 21.2349C7.28638 21.2349 6.95967 20.8896 6.95967 20.4637C6.95967 20.0378 7.28638 19.6925 7.6894 19.6925C8.09242 19.6925 8.41913 20.0378 8.41913 20.4637ZM16.4462 20.4637C16.4462 20.8896 16.1195 21.2349 15.7164 21.2349C15.3134 21.2349 14.9867 20.8896 14.9867 20.4637C14.9867 20.0378 15.3134 19.6925 15.7164 19.6925C16.1195 19.6925 16.4462 20.0378 16.4462 20.4637Z"
-                      stroke="#262524"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_1002_1693">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(0.12207 0.226562)"
-                    />
-                  </clipPath>
-                  <clipPath id="clip1_1002_1693">
-                    <rect
-                      width="24"
-                      height="21"
-                      fill="white"
-                      transform="translate(0.12207 1.72656)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <img
-            src={Product7}
-            alt="clothes"
-            className="w-[301px] h-[360px] 2xl:w-[400px] 2xl:h-[460px]"
-          />
-          <div className="flex justify-between px-5 pt-3 bg-white h-[67px] w-full">
-            <div>
-              <p className="text-sm">Crew Neck Shirt</p>
-              <p className="text-[#888888] text-base">€29.29</p>
-            </div>
-            <p>
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_1002_1693)">
-                  <g clip-path="url(#clip1_1002_1693)">
-                    <path
-                      d="M1.85156 5.04021H4.77048L6.72615 15.3662C6.79288 15.7213 6.97565 16.0402 7.24247 16.2672C7.50929 16.4942 7.84315 16.6148 8.18561 16.6078H15.2786C15.6211 16.6148 15.9549 16.4942 16.2218 16.2672C16.4886 16.0402 16.6713 15.7213 16.7381 15.3662L17.9056 8.89607H5.50021M20.825 2.72656V7.3536M23.0139 5.04004H18.6355M8.41913 20.4637C8.41913 20.8896 8.09242 21.2349 7.6894 21.2349C7.28638 21.2349 6.95967 20.8896 6.95967 20.4637C6.95967 20.0378 7.28638 19.6925 7.6894 19.6925C8.09242 19.6925 8.41913 20.0378 8.41913 20.4637ZM16.4462 20.4637C16.4462 20.8896 16.1195 21.2349 15.7164 21.2349C15.3134 21.2349 14.9867 20.8896 14.9867 20.4637C14.9867 20.0378 15.3134 19.6925 15.7164 19.6925C16.1195 19.6925 16.4462 20.0378 16.4462 20.4637Z"
-                      stroke="#262524"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_1002_1693">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="translate(0.12207 0.226562)"
-                    />
-                  </clipPath>
-                  <clipPath id="clip1_1002_1693">
-                    <rect
-                      width="24"
-                      height="21"
-                      fill="white"
-                      transform="translate(0.12207 1.72656)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </p>
-          </div>
-        </div>
+      <div className="max-w-[1150px] mx-auto grid lg:grid-cols-4 gap-5 gap-y-10 md:grid-cols-2 my-20 place-items-center">
+        <Card pic1={Product6} pic2={Product2} productlink="/" />
+        <Card pic1={Product2} pic2={Product1} productlink="/" />
+        <Card pic1={Product6} pic2={Product2} productlink="/" />
+        <Card pic1={Product2} pic2={Product1} productlink="/" />
+        <Card pic1={Product2} pic2={Product1} productlink="/" />
+        <Card pic1={Product2} pic2={Product1} productlink="/" />
+        <Card pic1={Product2} pic2={Product1} productlink="/" />
       </div>
     </section>
   );

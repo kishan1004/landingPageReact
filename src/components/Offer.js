@@ -2,10 +2,48 @@ import React from "react";
 
 const Offer = () => {
   return (
-    <section className="bg-[#1A1A1A] w-full">
-      <div className="xl:w-[1350px] 2xl:w-[2000px] mx-auto md:flex md:justify-center">
-        <div className="flex justify-center md:w-1/2">
-          <div className="2xl:ml-[404.34px] md:mt-[190px] absolute animate-spin-slow">
+    <section className="bg-[#1A1A1A]  py-32 px-4 my-20">
+      <div className="max-w-[1150px] mx-auto md:flex justify-center gap-10 items-center">
+        <div className="relative flex justify-center items-center w-[320px] h-[320px] mx-auto">
+          <div>
+            <svg
+              width="86"
+              height="67"
+              viewBox="0 0 86 67"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1002_1792)">
+                <g clip-path="url(#clip1_1002_1792)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.800781 2.99796L10.4167 0.1875L43.1586 51.425L74.7671 0.1875L84.4451 2.99796L85.1433 66.1292H74.6878L74.1906 21.1709L47.7178 64.0834H38.8793L11.4573 21.1709L11.9545 66.1292H1.49895L0.800781 2.99796Z"
+                    fill="white"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_1002_1792">
+                  <rect
+                    width="85"
+                    height="66.42"
+                    fill="white"
+                    transform="translate(0.281982 0.0078125)"
+                  />
+                </clipPath>
+                <clipPath id="clip1_1002_1792">
+                  <rect
+                    width="84.9785"
+                    height="66.42"
+                    fill="white"
+                    transform="translate(0.292725 0.0078125)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div className="absolute animate-spin-slow">
             <svg
               width="230"
               height="230"
@@ -167,107 +205,69 @@ const Offer = () => {
               </defs>
             </svg>
           </div>
-
-          <div className="2xl:ml-[400px] md:mt-[270px] mt-[80px] absolute">
-            <svg
-              width="86"
-              height="67"
-              viewBox="0 0 86 67"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_1002_1792)">
-                <g clip-path="url(#clip1_1002_1792)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M0.800781 2.99796L10.4167 0.1875L43.1586 51.425L74.7671 0.1875L84.4451 2.99796L85.1433 66.1292H74.6878L74.1906 21.1709L47.7178 64.0834H38.8793L11.4573 21.1709L11.9545 66.1292H1.49895L0.800781 2.99796Z"
-                    fill="white"
-                  />
-                </g>
-              </g>
-              <defs>
-                <clipPath id="clip0_1002_1792">
-                  <rect
-                    width="85"
-                    height="66.42"
-                    fill="white"
-                    transform="translate(0.281982 0.0078125)"
-                  />
-                </clipPath>
-                <clipPath id="clip1_1002_1792">
-                  <rect
-                    width="84.9785"
-                    height="66.42"
-                    fill="white"
-                    transform="translate(0.292725 0.0078125)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-
-          <div className="2xl:ml-[545.66px] md:mt-[262px] mt-[75px] ml-[130px] absolute">
-            <svg
-              width="84"
-              height="84"
-              viewBox="0 0 84 84"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_1002_1795)">
-                <g clip-path="url(#clip1_1002_1795)">
-                  <g clip-path="url(#clip2_1002_1795)">
-                    <path
-                      d="M36.9777 2.53616C40.4983 0.930656 44.5421 0.930655 48.0627 2.53616C49.8396 3.34643 51.7724 3.75728 53.7252 3.73975C57.5944 3.70501 61.2886 5.34978 63.8519 8.24844C65.1455 9.71136 66.7441 10.8728 68.5353 11.6511C72.0841 13.1931 74.7899 16.1982 75.9526 19.8889C76.5393 21.7514 77.5273 23.4628 78.847 24.9023C81.4618 27.7544 82.7114 31.6004 82.2725 35.4447C82.0509 37.385 82.2575 39.3502 82.8776 41.2019C84.1063 44.8712 83.6836 48.8928 81.7189 52.2263C80.7273 53.9087 80.1167 55.788 79.93 57.7319C79.5601 61.5836 77.5382 65.0856 74.3875 67.3319C72.7974 68.4655 71.4751 69.934 70.5139 71.6338C68.6093 75.0021 65.3379 77.379 61.5459 78.1494C59.6322 78.5383 57.827 79.3421 56.2575 80.5041C53.1476 82.8064 49.1922 83.6472 45.4146 82.8087C43.5082 82.3856 41.5322 82.3856 39.6257 82.8087C35.8482 83.6472 31.8928 82.8064 28.783 80.5041C27.2134 79.3421 25.4082 78.5383 23.4944 78.1494C19.7026 77.379 16.431 75.0021 14.5264 71.6338C13.5653 69.934 12.243 68.4655 10.6529 67.3319C7.50222 65.0856 5.48031 61.5836 5.1104 57.7319C4.92373 55.788 4.31309 53.9087 3.32153 52.2263C1.35682 48.8928 0.934122 44.8712 2.16283 41.2019C2.78293 39.3502 2.98949 37.385 2.76793 35.4447C2.32894 31.6004 3.57854 27.7544 6.1934 24.9023C7.51308 23.4628 8.50111 21.7514 9.08787 19.8889C10.2505 16.1982 12.9563 13.1931 16.5052 11.6511C18.2963 10.8728 19.8949 9.71136 21.1886 8.24843C23.7518 5.34978 27.446 3.70501 31.3153 3.73975C33.268 3.75728 35.2009 3.34643 36.9777 2.53616Z"
-                      fill="#BF8C4E"
-                    />
+          <div className="absolute right-[8px] md:right-[10px] lg:right-[10px]">
+            <div className="relative flex justify-center items-center w-[100px] h-[100px]">
+              <div className="text-[#FFFFFF] font-semibold text-xl z-10">
+                <p>UP TO</p>
+                <p className="pl-[12px]">70%</p>
+              </div>
+              <svg
+                className="absolute top-0 "
+                width="100"
+                height="100"
+                viewBox="0 0 84 84"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1002_1795)">
+                  <g clip-path="url(#clip1_1002_1795)">
+                    <g clip-path="url(#clip2_1002_1795)">
+                      <path
+                        d="M36.9777 2.53616C40.4983 0.930656 44.5421 0.930655 48.0627 2.53616C49.8396 3.34643 51.7724 3.75728 53.7252 3.73975C57.5944 3.70501 61.2886 5.34978 63.8519 8.24844C65.1455 9.71136 66.7441 10.8728 68.5353 11.6511C72.0841 13.1931 74.7899 16.1982 75.9526 19.8889C76.5393 21.7514 77.5273 23.4628 78.847 24.9023C81.4618 27.7544 82.7114 31.6004 82.2725 35.4447C82.0509 37.385 82.2575 39.3502 82.8776 41.2019C84.1063 44.8712 83.6836 48.8928 81.7189 52.2263C80.7273 53.9087 80.1167 55.788 79.93 57.7319C79.5601 61.5836 77.5382 65.0856 74.3875 67.3319C72.7974 68.4655 71.4751 69.934 70.5139 71.6338C68.6093 75.0021 65.3379 77.379 61.5459 78.1494C59.6322 78.5383 57.827 79.3421 56.2575 80.5041C53.1476 82.8064 49.1922 83.6472 45.4146 82.8087C43.5082 82.3856 41.5322 82.3856 39.6257 82.8087C35.8482 83.6472 31.8928 82.8064 28.783 80.5041C27.2134 79.3421 25.4082 78.5383 23.4944 78.1494C19.7026 77.379 16.431 75.0021 14.5264 71.6338C13.5653 69.934 12.243 68.4655 10.6529 67.3319C7.50222 65.0856 5.48031 61.5836 5.1104 57.7319C4.92373 55.788 4.31309 53.9087 3.32153 52.2263C1.35682 48.8928 0.934122 44.8712 2.16283 41.2019C2.78293 39.3502 2.98949 37.385 2.76793 35.4447C2.32894 31.6004 3.57854 27.7544 6.1934 24.9023C7.51308 23.4628 8.50111 21.7514 9.08787 19.8889C10.2505 16.1982 12.9563 13.1931 16.5052 11.6511C18.2963 10.8728 19.8949 9.71136 21.1886 8.24843C23.7518 5.34978 27.446 3.70501 31.3153 3.73975C33.268 3.75728 35.2009 3.34643 36.9777 2.53616Z"
+                        fill="#BF8C4E"
+                      />
+                    </g>
                   </g>
                 </g>
-              </g>
-              <defs>
-                <clipPath id="clip0_1002_1795">
-                  <rect
-                    width="83"
-                    height="83"
-                    fill="white"
-                    transform="translate(0.781982 0.726562)"
-                  />
-                </clipPath>
-                <clipPath id="clip1_1002_1795">
-                  <rect
-                    width="83"
-                    height="83"
-                    fill="white"
-                    transform="translate(0.781982 0.726562)"
-                  />
-                </clipPath>
-                <clipPath id="clip2_1002_1795">
-                  <rect
-                    width="83"
-                    height="83"
-                    fill="white"
-                    transform="translate(0.781982 0.726562)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <div className="text-[#FFFFFF] font-semibold text-xl 2xl:ml-[550px] md:mt-[280px] mt-[95px] ml-[132px] absolute">
-            <p>UP TO</p>
-            <p className="pl-[12px]">70%</p>
+                <defs>
+                  <clipPath id="clip0_1002_1795">
+                    <rect
+                      width="83"
+                      height="83"
+                      fill="white"
+                      transform="translate(0.781982 0.726562)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip1_1002_1795">
+                    <rect
+                      width="83"
+                      height="83"
+                      fill="white"
+                      transform="translate(0.781982 0.726562)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip2_1002_1795">
+                    <rect
+                      width="83"
+                      height="83"
+                      fill="white"
+                      transform="translate(0.781982 0.726562)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
           </div>
         </div>
 
-        <div className="md:py-[218.1px] pt-[218px] pb-20 xl:mr-80 md:mx-10 lg:mx-0">
-          <h1 className="text-[#FFFFFF] font-medium text-5xl text-center lg:text-start">
+        <div className="max-w-[560px] mx-auto  md:text-start text-center ">
+          <h1 className="text-[#FFFFFF] font-medium text-5xl leading-tight mb-5  lg:text-start">
             Find out about the sales at your local shop
           </h1>
-          <div className="flex justify-center lg:justify-start">
-            <button className="bg-white px-[41px] py-[22px] mt-10 hover:brightness-75 rounded">
-              FIND SHOPS NEAR YOU
-            </button>
-          </div>
+
+          <button className="bg-white py-4 px-6  hover:brightness-75 rounded">
+            FIND SHOPS NEAR YOU
+          </button>
         </div>
       </div>
     </section>

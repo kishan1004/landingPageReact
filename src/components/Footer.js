@@ -349,8 +349,8 @@ const Footer = () => {
         </Marquee>
       </div>
 
-      <div className="grid md:grid-cols-6 grid-cols-1 md:justify-items-center items-center pt-[100px]">
-        <div className="FooterPortion1 grid-flow-row-dense col-span-2 md:pl-32 px-10">
+      <div className="grid lg:grid-cols-6 grid-cols-2 gap-10 justify-items-center items-center pt-[100px] pb-32 lg:pb-0 ">
+        <div className="FooterPortion1  col-span-2  px-10">
           <div className="py-[100px]">
             <svg
               width="65"
@@ -441,7 +441,7 @@ const Footer = () => {
             </svg>
           </div>
 
-          <p className="text-4xl font-extralight pb-[41.61px]">
+          <p className="text-4xl font-extralight pb-[41px]">
             Find out about the sales at your local shop
           </p>
           <button>
@@ -472,7 +472,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="col-span-1 pt-10 md:pt-0 px-10 lg:mt-8 md:ml-10 lg:ml-0">
+        <div className="col-span-1 ">
           <h1 className="md:pb-[41px] font-medium text-sm">CATOGORIES</h1>
           <ul className="leading-loose text-base font-thin">
             <li>
@@ -518,7 +518,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="col-span-1 pt-10 md:pt-0 px-10 lg:mt-8">
+        <div className="col-span-1 ">
           <h1 className="md:pb-[41px] font-medium text-sm">COMPANY</h1>
           <ul className="leading-loose text-base font-thin">
             <li>
@@ -564,7 +564,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="col-span-1 pt-10 md:pt-0 px-10">
+        <div className="col-span-1 ">
           <h1 className="md:pb-[41px] font-medium text-sm">SUPPORT</h1>
           <ul className="leading-loose text-base font-thin">
             <li>
@@ -602,8 +602,8 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="col-span-1 py-10 md:pt-0 px-10">
-          <ul>
+        <div className="col-span-1 ">
+          <ul className="flex-col space-y-4">
             <li>
               <a
                 href="https://www.google.co.in/"
@@ -770,10 +770,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
-        {/* <div>
-          <p className="p-5 font-light text-lg">powered by Webflow</p>
-        </div> */}
       </div>
     </footer>
   );

@@ -1,26 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import Contact1 from "../images/contact1.jpeg";
 // import Contact2 from "../images/contact2.jpeg";
 // import Contact3 from "../images/contact3.jpeg";
 // import Contact4 from "../images/contact4.jpeg";
 // import Contact5 from "../images/contact5.jpeg";
 // import Contact6 from "../images/contact6.jpeg";
+import ContactBg from "../images/contact-us.svg";
 
 const Contact = () => {
+  const [bgPosition, setBgPosition] = useState(60); // Start position at 60%
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+
+      // Only update the background position from 60% to 100%
+      const newPosition = Math.min(100, Math.max(60, scrollPercent + 60));
+      setBgPosition(newPosition);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <section className="bg-[#1A1A1A] w-full">
-      {/* <div className="absolute">
-        <img
-          src={Contact1}
-          className="brightness-50 max-h-[285px] max-w-[190px] ml-[200px] mt-[200px]"
-        />
-
-        <img src={Contact2} />
-      </div> */}
-
-      <div className="flex flex-col justify-center items-center 2xl:h-[1539px] h-[800px]">
+    <section
+      className="bg-[#1A1A1A] bg-no-repeat w-full mt-20 relative py-96 bg-cover"
+      style={{
+        backgroundImage: `url(${ContactBg})`,
+        backgroundPosition: `50%`, // Dynamic background position
+      }}
+    >
+      <div className=" w-full text-center px-4">
         <div>
-          <h1 className="text-[#FFFFFF] text-3xl md:text-4xl font-light text-center px-3 2xl:pb-48 xl:pb-40 md:pb-36 pb-20">
+          <h1 className="text-[#FFFFFF] text-3xl md:text-4xl font-light">
             Put your hands first at our <br />
             premium and limited products
           </h1>
@@ -30,11 +48,12 @@ const Contact = () => {
           Subscribe to our newsletter.
         </p>
 
-        <button className="bg-[#262524] text-[#FFFFFF] text-lg font-normal 2xl:px-[400px] md:px-[200px] lg:py-[18px] py-2 px-20  mb-5 rounded">
-          E-mail
-        </button>
+        <input
+          className="bg-[#262524] text-[#FFFFFF] text-lg font-normal placeholder:text-center my-5 rounded p-4 max-w-[500px] w-full"
+          placeholder="Email"
+        />
 
-        <button className="bg-[#FFFFFF] flex items-center space-x-5 text-sm font-semibold 2xl:px-[360px] md:px-[160px] lg:py-[18px] py-2 px-10 rounded hover:brightness-75">
+        <button className="bg-[#FFFFFF] max-w-[500px] flex justify-center items-center my-5 mx-auto w-full space-x-4 text-sm font-semibold py-2 px-10 rounded hover:brightness-75">
           <svg
             width="26"
             height="25"

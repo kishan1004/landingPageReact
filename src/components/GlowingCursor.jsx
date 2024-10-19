@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-const GlowingCursor = () => {
+const CursorBlur = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+    const handleMouseMove = (event) => {
+      setTimeout(()=>{ setPosition({ x: event.clientX, y: event.clientY })},250)
+     
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -16,18 +17,18 @@ const GlowingCursor = () => {
   }, []);
 
   return (
-    <div className="relative">
-      <div className="fixed top-0 left-0 w-full h-full cursor-none"></div>
-
+    <>
+      {/* The orange blur circle that follows the cursor */}
       <div
-        className="w-8 h-8 bg-[#facc15] rounded-full shadow-[0_0_8px_2px_rgba(59,130,246,0.8)] animate-pulse fixed pointer-events-none"
+        className="fixed w-24 h-24 bg-orange-500 opacity-60 rounded-full blur-[60px] pointer-events-none -z-10"
         style={{
-          left: `${position.x - 16}px`,  
-          top: `${position.y - 16}px`,   
+          left: `${position.x}px`,
+          top: `${position.y}px`,
+          transform: 'translate(-50%, -50%)',
         }}
-      ></div>
-    </div>
+      />
+    </>
   );
 };
 
-export default GlowingCursor;
+export default CursorBlur;

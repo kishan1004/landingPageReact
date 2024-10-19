@@ -5,62 +5,61 @@ import Slide3 from "../images/slide3.jpeg";
 import Slide4 from "../images/slide4.jpeg";
 import Slide5 from "../images/slide5.jpeg";
 
+const Card = (props) => {
+  return (
+    <div class="relative cursor-pointer h-[400px] lg:h-[460px] xl:h-[600px] 2xl:h-[900px] w-full bg-blue-400 rounded-md">
+      <img
+        src={props.image}
+        alt="clothes"
+        className="rounded-md w-full h-full grayscale hover:grayscale-0 brightness-50 hover:brightness-100 object-fill"
+      />
+      <div
+        className={`w-[200px]  absolute right-[10%] ${props.bottom} z-20  -rotate-90 origin-right  text-white text-4xl 2xl:text-6xl`}
+      >
+        {props.text}
+      </div>
+    </div>
+  );
+};
+
 const Slide = () => {
   return (
-    <section className="bg-[#E1DEDB] w-full">
-      <div className="2xl:px-10 place-items-center px-5 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-4 grid-cols-1 pt-5 gap-5">
-        <div class="relative cursor-pointer">
-          <img
-            src={Slide1}
-            alt="clothes"
-            className="w-[368px] 2xl:w-[450px] 2xl:h-[820px] xl:h-[600px] lg:h-[550px] md:h-[450px] rounded grayscale hover:grayscale-0 brightness-50 hover:brightness-100"
+    <section className=" w-full my-20">
+      <div className="place-items-center px-4 grid lg:grid-cols-5 md:grid-cols-3  grid-cols-1 pt-5 gap-3">
+        <div>
+          <Card
+            image={Slide1}
+            text="Hoodies"
+            bottom="bottom-[50%] md:bottom-[50%] xl:bottom-[40%]"
           />
-          <div className="absolute bottom-40 2xl:bottom-64 2xl:right-8 right-4 transform -rotate-90 origin-bottom-right text-white text-4xl 2xl:text-6xl">
-            Hoodies
-          </div>
         </div>
-
-        <div class="relative lg:pt-[40px] cursor-pointer">
-          <img
-            src={Slide2}
-            alt="clothes"
-            className="w-[368px] 2xl:w-[450px] 2xl:h-[820px] xl:h-[600px] lg:h-[550px] md:h-[450px] rounded grayscale hover:grayscale-0 brightness-50 hover:brightness-100"
+        <div className="lg:mt-[60px]">
+          <Card
+            image={Slide2}
+            text="Sweatshirts"
+            bottom="bottom-[50%] md:bottom-[50%] xl:bottom-[40%]"
           />
-          <div className="absolute md:bottom-52 bottom-56 2xl:bottom-[340px] 2xl:right-8 right-4 transform -rotate-90 origin-bottom-right text-white text-4xl 2xl:text-6xl">
-            Sweatshirts
-          </div>
         </div>
-
-        <div class="relative cursor-pointer">
-          <img
-            src={Slide3}
-            alt="clothes"
-            className="w-[368px] 2xl:w-[450px] 2xl:h-[820px] xl:h-[600px] lg:h-[550px] md:h-[450px] rounded grayscale hover:grayscale-0 brightness-50 hover:brightness-100"
+        <div>
+          <Card
+            image={Slide3}
+            text="Shirts"
+            bottom="bottom-[50%] md:bottom-[50%] xl:bottom-[40%]"
           />
-          <div className="absolute bottom-32 2xl:bottom-48 2xl:right-8 right-4 transform -rotate-90 origin-bottom-right text-white text-4xl 2xl:text-6xl">
-            Shirts
-          </div>
         </div>
-
-        <div class="relative lg:pt-[40px] cursor-pointer">
-          <img
-            src={Slide4}
-            alt="clothes"
-            className="w-[368px] 2xl:w-[450px] 2xl:h-[820px] xl:h-[600px] lg:h-[550px] md:h-[450px] rounded grayscale hover:grayscale-0 brightness-50 hover:brightness-100"
+        <div className="lg:mt-[60px]">
+          <Card
+            image={Slide4}
+            text="T-Shirts"
+            bottom="bottom-[50%] md:bottom-[50%] xl:bottom-[40%]"
           />
-          <div className="absolute md:bottom-36 2xl:bottom-56 bottom-44 2xl:right-8 right-4 transform -rotate-90 origin-bottom-right text-white text-4xl 2xl:text-6xl">
-            T-Shirts
-          </div>
         </div>
-        <div class="relative cursor-pointer">
-          <img
-            src={Slide5}
-            alt="clothes"
-            className="2xl:w-[450px] w-[368px] 2xl:h-[820px] xl:h-[600px] lg:h-[550px] md:h-[450px] rounded grayscale hover:grayscale-0 brightness-50 hover:brightness-100"
+        <div>
+          <Card
+            image={Slide5}
+            text="Jackets"
+            bottom="bottom-[50%] md:bottom-[50%] xl:bottom-[40%]"
           />
-          <div className="absolute bottom-40 2xl:bottom-64 2xl:right-8 right-4 transform -rotate-90 origin-bottom-right text-white text-4xl 2xl:text-6xl">
-            Jackets
-          </div>
         </div>
       </div>
     </section>
