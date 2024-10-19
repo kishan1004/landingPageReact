@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Product1 from "../images/product1.jpeg";
 import Product2 from "../images/product2.jpeg";
-import Product3 from "../images/product3.jpeg";
-import Product4 from "../images/product4.jpeg";
-import Product5 from "../images/product5.jpeg";
+// import Product3 from "../images/product3.jpeg";
+// import Product4 from "../images/product4.jpeg";
+// import Product5 from "../images/product5.jpeg";
 import Product6 from "../images/product6.jpeg";
-import Product7 from "../images/product7.jpeg";
+// import Product7 from "../images/product7.jpeg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -5,13 +5,13 @@ import Product2 from "../images/product2.jpeg";
 // import Product4 from "../images/product4.jpeg";
 // import Product5 from "../images/product5.jpeg";
 import Product6 from "../images/product6.jpeg";
-import Product7 from "../images/product7.jpeg";
+// import Product7 from "../images/product7.jpeg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Card = (props) => {
-  const { pic1, pic2, productlink } = props;
+  const { pic1, pic2 } = props;
 
   const [ishovering, setIsHovering] = useState(false);
   return (

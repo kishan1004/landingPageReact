@@ -12,6 +12,9 @@ const Contact = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      if (bgPosition) {
+        console.log("");
+      }
       const scrollTop = window.scrollY;
       const docHeight =
         document.documentElement.scrollHeight - window.innerHeight;
