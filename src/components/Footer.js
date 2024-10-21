@@ -8,24 +8,24 @@ import LogoIcon from "../images/starringblack.jpeg";
 const Footer = () => {
   return (
     <footer className="bg-[#1A1A1A] text-[#FFFFFF] w-full">
-      <div className="bg-[#E1DEDB] transform rotate-1 w-full">
+      <div className="bg-[#E1DEDB] transform rotate-1 max-w-full">
         <Marquee>
-          <div className="flex gap-10 items-center py-5 px-6 h-[70px]">
+          <div className="flex gap-10 items-center py-5 px-6 h-[70px] overflow-hidden">
             <img src={LogoImg} alt="hi" className="h-[40px]" />
 
             <img src={LgoName} alt="hi" className="w-[250px] pt-2" />
           </div>
-          <div className="flex gap-10 items-center py-5 px-6 h-[70px]">
+          <div className="flex gap-10 items-center py-5 px-6 h-[70px] overflow-hidden">
             <img src={LogoImg} alt="hi" className="h-[40px]" />
 
             <img src={LgoName} alt="hi" className="w-[250px] pt-2" />
           </div>
-          <div className="flex gap-10 items-center py-5 px-6 h-[70px]">
+          <div className="flex gap-10 items-center py-5 px-6 h-[70px] overflow-hidden">
             <img src={LogoImg} alt="hi" className="h-[40px]" />
 
             <img src={LgoName} alt="hi" className="w-[250px] pt-2" />
           </div>
-          <div className="flex gap-10 items-center py-5 px-6 h-[70px]">
+          <div className="flex gap-10 items-center py-5 px-6 h-[70px] overflow-hidden">
             <img src={LogoImg} alt="hi" className="h-[40px]" />
 
             <img src={LgoName} alt="hi" className="w-[250px] pt-2" />

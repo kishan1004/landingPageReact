@@ -6,3 +6,8 @@ body {
     @apply font-sans;
     background:#E1DEDB;
 }
+
+html,
+body {
+    overflow-x: hidden;
+}

@@ -7,11 +7,11 @@ import Slide5 from "../images/slide5.jpeg";
 
 const Card = (props) => {
   return (
-    <div class="relative cursor-pointer h-[400px] lg:h-[460px] xl:h-[600px] 2xl:h-[900px] w-full bg-blue-400 rounded-md">
+    <div class="relative cursor-pointer h-[400px] lg:h-[400px] xl:h-[500px] 2xl:h-[900px] w-full bg-blue-400 rounded-md">
       <img
         src={props.image}
         alt="clothes"
-        className="rounded-md w-full h-full grayscale hover:grayscale-0 brightness-50 hover:brightness-100 object-fill"
+        className="rounded-md w-full h-full brightness-50 hover:brightness-100 object-fill"
       />
       <div
         className={`w-[200px]  absolute right-[10%] ${props.bottom} z-20  -rotate-90 origin-right  text-white text-4xl 2xl:text-6xl`}
