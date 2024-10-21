@@ -7,7 +7,7 @@ import Slide5 from "../images/slide5.jpeg";
 
 const Card = (props) => {
   return (
-    <div class="relative cursor-pointer h-[300px] xl:h-[350px]  2xl:h-[700px] max-w-full bg-blue-400 rounded-md">
+    <div class="relative cursor-pointer h-[300px] xl:h-[350px]  2xl:h-[700px] max-w-full rounded-md">
       <img
         src={props.image}
         alt="clothes"
@@ -25,7 +25,7 @@ const Card = (props) => {
 const Slide = () => {
   return (
     <section className=" w-full my-20">
-      <div className="place-items-center px-4 grid lg:grid-cols-5 md:grid-cols-3  grid-cols-1 pt-5 gap-3">
+      <div className="place-items-center px-5 lg:px-10 grid md:grid-cols-5   grid-cols-1 pt-5 gap-x-2 gap-y-3">
         <div>
           <Card image={Slide1} text="Hoodies" />
         </div>
