@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="flex gap-10 items-center py-5 px-6 h-[70px]">
             <img src={LogoImg} alt="hi" className="h-[40px]" />
 
-            <img src={LgoName} alt="hi" className="w-[250px] h-[70px] pt-2" />
+            <img src={LgoName} alt="hi" className="w-[250px] pt-2" />
           </div>
           <div className="flex gap-10 items-center py-5 px-6 h-[70px]">
             <img src={LogoImg} alt="hi" className="h-[40px]" />
