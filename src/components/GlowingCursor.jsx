@@ -20,7 +20,7 @@ const CursorBlur = () => {
     <>
       {/* The orange blur circle that follows the cursor */}
       <div
-        className="fixed w-24 h-24 bg-orange-500 opacity-60 rounded-full blur-[60px] pointer-events-none -z-10"
+        className="fixed w-20 h-20 bg-orange-500 opacity-80 rounded-full blur-[50px] pointer-events-none -z-10"
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,

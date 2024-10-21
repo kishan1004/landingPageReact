@@ -180,13 +180,13 @@ const Newproduct = () => {
       </div>
 
       <div className="max-w-[1150px] mx-auto grid lg:grid-cols-4 gap-5 gap-y-10 md:grid-cols-2 my-20 place-items-center">
-        <Card pic1={Product6} pic2={Product2} />
-        <Card pic1={Product2} pic2={Product1} />
-        <Card pic1={Product6} pic2={Product2} />
-        <Card pic1={Product2} pic2={Product1} />
-        <Card pic1={Product2} pic2={Product1} />
-        <Card pic1={Product2} pic2={Product1} />
-        <Card pic1={Product2} pic2={Product1} />
+        <Card pic1={Product6} pic2={Product2} productlink="/" />
+        <Card pic1={Product2} pic2={Product1} productlink="/" />
+        <Card pic1={Product6} pic2={Product2} productlink="/" />
+        <Card pic1={Product2} pic2={Product1} productlink="/" />
+        <Card pic1={Product2} pic2={Product1} productlink="/" />
+        <Card pic1={Product2} pic2={Product1} productlink="/" />
+        <Card pic1={Product2} pic2={Product1} productlink="/" />
       </div>
     </section>
   );
