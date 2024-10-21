@@ -26,7 +26,7 @@ const Card = (props) => {
         setIsHovering(false);
       }}
     >
-      <div className="w-full h-[300px] overflow-hidden bg-red-600">
+      <div className="w-full h-[300px] overflow-hidden">
         <img
           src={pic1}
           alt="clothes"
