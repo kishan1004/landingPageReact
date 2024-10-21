@@ -56,12 +56,13 @@
 // );
 
 import LogoImg from "../images/Starringwithlogo.jpeg";
-import LgoName from "src/images/starringlogoblack.PNG";
+import LgoName from "../images/starringlogoblack.PNG";
 
 const Topbar = () => {
   return (
     <div className="fixed top-0 w-screen flex items-center px-4 h-[50px] z-[999] bg-gray-100">
       <img src={LogoImg} alt="hi" className="h-[40px]" />
+      <img src={LgoName} alt="hi" className="w-[250px] pt-2" />
     </div>
   );
 };
