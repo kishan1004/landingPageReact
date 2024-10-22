@@ -26,7 +26,7 @@ const Card = (props) => {
         setIsHovering(false);
       }}
     >
-      <div className="w-full h-[300px] overflow-hidden">
+      <div className="w-full h-[300px] overflow-hidden rounded-t-lg">
         <img
           src={pic1}
           alt="clothes"
@@ -43,12 +43,12 @@ const Card = (props) => {
           }  hover:opacity-0  object-fill ease-in duration-500 transition-all`}
         />
       </div>
-      <div className="flex justify-between p-4 bg-white  w-full ">
+      <div className="flex justify-between p-4 bg-white  w-full rounded-b-lg">
         <div>
           <p className="text-sm">Crew Neck Shirt</p>
           <p className="text-[#888888] text-base">€29.29</p>
         </div>
-        <p>
+        <button>
           <svg
             width="25"
             height="25"
@@ -86,7 +86,7 @@ const Card = (props) => {
               </clipPath>
             </defs>
           </svg>
-        </p>
+        </button>
       </div>
     </div>
   );

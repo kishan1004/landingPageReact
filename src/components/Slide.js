@@ -25,7 +25,7 @@ const Card = (props) => {
 const Slide = () => {
   return (
     <section className=" w-full my-20">
-      <div className="place-items-center px-5 lg:px-10 grid md:grid-cols-5   grid-cols-1 pt-5 gap-x-2 gap-y-3">
+      <div className="place-items-center px-5 lg:px-10 grid md:grid-cols-5   grid-cols-1 gap-x-2 gap-y-3">
         <div>
           <Card image={Slide1} text="Hoodies" />
         </div>
