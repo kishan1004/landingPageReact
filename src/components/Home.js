@@ -13,7 +13,10 @@ const Home = () => {
           <h1 className="mb-10 mt-4 text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-[#FFFFFF]  md:text-start">
             INTO THE <br /> RIGHT GEAR
           </h1>
-          <a className="cursor-pointer" href="/">
+          <a
+            className="cursor-pointer"
+            href="https://earnest-marshmallow-59a2b8.netlify.app/"
+          >
             <span className="mr-4">VIEW SUMMER COLLECTION</span>
             <svg
               width="13"
@@ -44,7 +47,6 @@ const Home = () => {
         </div>
 
         <div className="relative  bg-[#c4c3c1] col-span-3">
-          {/* Rect */}
           <div className="hidden md:flex bg-[#bf8c4e] blur-[0.2] opacity-45  w-[100px] h-[100px] -bottom-[8%] -left-[8%]  absolute"></div>
           <img
             alt="clothes"

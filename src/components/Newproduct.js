@@ -45,7 +45,11 @@ const Card = (props) => {
       </div>
       <div className="flex justify-between p-4 bg-white  w-full rounded-b-lg">
         <div>
-          <p className="text-sm">Crew Neck Shirt</p>
+          <p className="text-sm">
+            <a href="https://earnest-marshmallow-59a2b8.netlify.app/">
+              Crew Neck Shirt
+            </a>
+          </p>
           <p className="text-[#888888] text-base">€29.29</p>
         </div>
         <button>
@@ -150,7 +154,11 @@ const Newproduct = () => {
           </p>
 
           <div className="flex  max-w-[160px] mx-auto lg:mx-0 mt-10 flex-1 w-full justify-between pr-10">
-            <p>VIEW ALL</p>
+            <p>
+              <a href="https://earnest-marshmallow-59a2b8.netlify.app/">
+                VIEW ALL
+              </a>
+            </p>
             <svg
               width="13"
               height="13"
@@ -180,7 +188,7 @@ const Newproduct = () => {
       </div>
 
       <div className="max-w-[1150px] mx-auto grid lg:grid-cols-4 gap-5 gap-y-10 md:grid-cols-2 my-20 place-items-center">
-        <Card pic1={Product6} pic2={Product2} productlink="/" />
+        <Card pic1={Product6} pic2={Product2} productlink="" />
         <Card pic1={Product2} pic2={Product1} productlink="/" />
         <Card pic1={Product6} pic2={Product2} productlink="/" />
         <Card pic1={Product2} pic2={Product1} productlink="/" />

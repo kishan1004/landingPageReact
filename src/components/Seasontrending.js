@@ -45,7 +45,11 @@ const Card = (props) => {
       </div>
       <div className="flex justify-between p-4 bg-white  w-full rounded-b-lg">
         <div>
-          <p className="text-sm">Crew Neck Shirt</p>
+          <p className="text-sm">
+            <a href="https://earnest-marshmallow-59a2b8.netlify.app/">
+              Crew Neck Shirt
+            </a>
+          </p>
           <p className="text-[#888888] text-base">€29.29</p>
         </div>
 
